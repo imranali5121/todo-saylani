@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-App</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="main">
+        <div id="modal">
+            <div class="modal-container">
+                <i class="fa fa-times" onclick="closeModal()"></i> <br>
+                <input type="text" id="task" placeholder="task">
+                <br> <br>
+                <button onclick="addTask()">Add task</button>
+            </div>
+        </div>
+        <div class="addTodo-container">
+            <i class="fa fa-plus" onclick="openModal()"></i>
+            <i class="fa fa-arrow-left"></i>
+            <span> Click Here.</span>
+            <div id="task-container">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

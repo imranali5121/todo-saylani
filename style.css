@@ -1,0 +1,107 @@
+html,body{
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-image: url(a.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#modal{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.521);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+.modal-container{
+    background-color: white;
+    padding: 10px 40px;
+    border-radius: 10px;
+    position: relative;
+    border: 2px solid rgb(0, 225, 255);
+    border-top: 5px solid rgb(0, 225, 255);
+    border-bottom: 5px solid rgb(0, 225, 255);
+}
+.modal-container button{
+    width: 100%;
+}
+.modal-container>i{
+    left: 98%;
+    bottom: 95%;
+    background-color: aliceblue;
+    border-radius: 50px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    box-shadow: -5px 5px 5px;
+}
+.modal-container>input{
+    outline: none;
+}
+.addTodo-container{
+    background-color: aqua;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.addTodo-container>input{
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+}
+.addTodo-container>:nth-child(1){
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}  
+.done{
+    text-decoration: line-through;
+}
+.notdone{
+    text-decoration: none;
+}
+.todo>p{
+    flex: 4;
+}
+.todo>input,i{
+    flex: 1;
+}
+.todo{
+    display: flex;
+    width: 200px;
+    padding: 2px 3px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+.todo>i,input{
+    cursor: pointer;
+}
